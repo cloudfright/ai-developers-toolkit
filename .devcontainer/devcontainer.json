@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/debian
 {
-	"name": "Debian",
+	"name": "Python",
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick an Debian version: bullseye, buster
@@ -22,5 +22,11 @@
 	"remoteUser": "vscode",
 	"features": {
 		"ghcr.io/devcontainers/features/python:1.0.17": {}
-	}
+	},
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance"
+	  ],
+	"postCreateCommand": "pip install -r requirements-dev.txt"
 }
