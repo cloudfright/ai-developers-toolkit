@@ -1,3 +1,4 @@
 # Ignore the following:
 .venv
 .vscode
+/structured_data_classifier

@@ -28,5 +28,5 @@
 		"ms-python.python",
 		"ms-python.vscode-pylance"
 	  ],
-	"postCreateCommand": "pip install -r requirements-dev.txt"
+	"postCreateCommand": "pip install -r .devcontainer/requirements-dev.txt"
 }
